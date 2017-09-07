@@ -22,7 +22,7 @@ namespace
 	std::string tarExt{"*.csv"};
 
 
-	void startSearch(const Array<File>& r)
+	void startQuery(const Array<File>& r)
 	{
 		std::string fBuf;
 		vector<string> fBufLs;
@@ -81,7 +81,7 @@ int main (int argc, char* argv[])
 	DBG(tar.getFullPathName());
 	tar.findChildFiles(ret, 2, true, tarExt);
 
-	startSearch(ret);
+	startQuery(ret);
 
 	system("PAUSE");
     return 0;

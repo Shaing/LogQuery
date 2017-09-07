@@ -16,8 +16,8 @@ public:
 	virtual void setKey(const std::string& k) = 0;
 	virtual void setVal(const std::string& v) = 0;
 	virtual void setMap() = 0;
-	virtual void getMap(std::unordered_map<std::string, std::string>& m) = 0;
-	virtual void showMap() = 0;
+	virtual void getMap(std::unordered_map<std::string, std::string>& m) const = 0;
+	virtual void showMap() const = 0;
 };
 
 class CRCMAP : public ELMMAP
@@ -44,8 +44,8 @@ public:
 	}
 
 	void setMap() override{ snAndCrcCnt.insert({key, value}); }
-	void getMap(std::unordered_map<std::string, std::string>& m) override{ m = std::move(snAndCrcCnt); }
-	void showMap() override
+	void getMap(std::unordered_map<std::string, std::string>& m) const override{ m = std::move(snAndCrcCnt); }
+	void showMap () const override
 	{
 		for(const auto& x : snAndCrcCnt)
 			cout << x.first << "," << x.second << endl;
