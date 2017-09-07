@@ -54,8 +54,6 @@ namespace
 			crcMap->getVal(fBufLs[(fBufLs.size() - 1)]);
 			crcMap->setMap();
 		}
-
-		
 		crcMap->showMap();
 		crcMap->getMap(crcUm);
 	}

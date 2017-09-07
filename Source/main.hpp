@@ -32,9 +32,9 @@ public:
 		std::string::size_type f = v.find("CRCCnt");
 		if(f != std::string::npos)
 		{
-			value = v.substr(v.find("CRCCnt"));
-			value = value.substr(8);
+			value = v.substr((f + 8));
 			value = value.substr(0, value.find(","));
+			value = value.substr(value.find_last_of(" ") + 1);
 			//coutLog(value);
 		}
 		else

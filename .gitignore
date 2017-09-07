@@ -358,3 +358,4 @@ JuceLibraryCode/juce_gui_basics.mm
 JuceLibraryCode/juce_gui_extra.cpp
 JuceLibraryCode/juce_gui_extra.mm
 JuceLibraryCode/ReadMe.txt
+.vscode/settings.json
