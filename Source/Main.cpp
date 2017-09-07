@@ -1,4 +1,4 @@
-/*
+﻿/*
   ==============================================================================
 
     This file was auto-generated!
@@ -75,6 +75,7 @@ namespace
 int main (int argc, char* argv[])
 {
     // ..your code goes here!
+	//File tar(File::getCurrentWorkingDirectory().getFullPathName() + "\\log");
 
 	File tar(inputPath);
 	DBG(tar.getFullPathName());
