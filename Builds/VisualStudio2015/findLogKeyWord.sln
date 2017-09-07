@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2015
+Project("{058006C5-2D42-F6E1-072B-2D815F75F3A2}") = "findLogKeyWord", "findLogKeyWord.vcxproj", "{6DB11171-1B9E-E675-09FC-46EE1018DD0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DB11171-1B9E-E675-09FC-46EE1018DD0B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6DB11171-1B9E-E675-09FC-46EE1018DD0B}.Debug|Win32.Build.0 = Debug|Win32
+		{6DB11171-1B9E-E675-09FC-46EE1018DD0B}.Release|Win32.ActiveCfg = Release|Win32
+		{6DB11171-1B9E-E675-09FC-46EE1018DD0B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
