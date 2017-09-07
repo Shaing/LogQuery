@@ -29,12 +29,12 @@ namespace
 
 		unique_ptr<inno::ELMMAP> crcMap(new inno::CRCMAP());
 		std::unordered_map<std::string, std::string> crcUm;
+		std::unordered_map<std::string, int> crcStats;
 		for(auto i = 0; i < r.size(); ++i)
 		{
 			fBufLs.clear();
-			//std::cout << r[i].getFullPathName() << std::endl;
-			//get sn
-			crcMap->getKey(r[i].getFullPathName().toStdString());
+			//set sn
+			crcMap->setKey(r[i].getFullPathName().toStdString());
 			std::fstream f(r[i].getFullPathName().toRawUTF8(), std::fstream::in);
 			if(!f)
 				std::cout << "Open file fail!" << std::endl;
@@ -50,12 +50,21 @@ namespace
 				}
 			}
 			f.close();
-			//get crc cnt
-			crcMap->getVal(fBufLs[(fBufLs.size() - 1)]);
+			//set crc cnt
+			crcMap->setVal(fBufLs[(fBufLs.size() - 1)]);
 			crcMap->setMap();
 		}
 		crcMap->showMap();
 		crcMap->getMap(crcUm);
+
+		for(auto b = crcUm.begin(); b != crcUm.end(); ++b)
+		{
+			++crcStats[b->second];
+		}
+
+		for(const auto &s : crcStats)
+			std::cout << s.first << "," << s.second << std::endl; 		
+
 	}
 	
 }

@@ -3,6 +3,9 @@
 #include <string>
 #include <unordered_map>
 
+using std::cout;
+using std::endl;
+
 template<typename T>
 void coutLog(T l){ std::cout << l << std::endl;}
 
@@ -10,8 +13,8 @@ namespace inno{
 class ELMMAP
 {
 public:
-	virtual std::string& getKey(const std::string& k) = 0;
-	virtual std::string& getVal(const std::string& v) = 0;
+	virtual void setKey(const std::string& k) = 0;
+	virtual void setVal(const std::string& v) = 0;
 	virtual void setMap() = 0;
 	virtual void getMap(std::unordered_map<std::string, std::string>& m) = 0;
 	virtual void showMap() = 0;
@@ -20,14 +23,13 @@ public:
 class CRCMAP : public ELMMAP
 {
 public:
-	std::string& getKey(const std::string& k) override
+	void setKey(const std::string& k) override
 	{
 		key = k.substr(k.find_last_of("\\") + 1);
 		key = key.substr(0, 20);
-		return key;
 	}
 
-	std::string& getVal(const std::string& v) override
+	void setVal(const std::string& v) override
 	{
 		std::string::size_type f = v.find("CRCCnt");
 		if(f != std::string::npos)
@@ -39,7 +41,6 @@ public:
 		}
 		else
 			value.clear();
-		return value;
 	}
 
 	void setMap() override{ snAndCrcCnt.insert({key, value}); }
@@ -47,7 +48,7 @@ public:
 	void showMap() override
 	{
 		for(const auto& x : snAndCrcCnt)
-			std::cout << x.first << "," << x.second << std::endl;
+			cout << x.first << "," << x.second << endl;
 	}
 private:
 	std::string key;
