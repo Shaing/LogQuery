@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="P7TZGV" name="findLogKeyWord" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.findLogKeyWord" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.1">
+  <MAINGROUP id="kkUv9z" name="findLogKeyWord">
+    <GROUP id="{B3272C5E-C0B6-33D6-2EFE-356FAAB0009B}" name="Source">
+      <FILE id="Vh0Mhh" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="Vh0Mhh" name="Main.hpp" compile="1" resource="0" file="Source/Main.hpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="findLogKeyWord" characterSet="Unicode"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="findLogKeyWord"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../stsd/third_party/juce/modules"/>
+        <MODULEPATH id="juce_events" path="../../../stsd/third_party/juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../stsd/third_party/juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../stsd/third_party/juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../stsd/third_party/juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../stsd/third_party/juce/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
