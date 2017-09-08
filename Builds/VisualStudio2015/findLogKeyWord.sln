@@ -1,6 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2015
-Project("{058006C5-2D42-F6E1-072B-2D815F75F3A2}") = "findLogKeyWord", "findLogKeyWord.vcxproj", "{6DB11171-1B9E-E675-09FC-46EE1018DD0B}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "findLogKeyWord", "findLogKeyWord.vcxproj", "{6DB11171-1B9E-E675-09FC-46EE1018DD0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

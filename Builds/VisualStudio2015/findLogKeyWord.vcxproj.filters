@@ -2456,6 +2456,18 @@
     <ClInclude Include="..\..\Source\main.hpp">
       <Filter>findLogKeyWord\Source</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_core\juce_core.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_data_structures\juce_data_structures.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_events\juce_events.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_graphics\juce_graphics.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_gui_basics\juce_gui_basics.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_gui_extra\juce_gui_extra.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_core\juce_core.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_data_structures\juce_data_structures.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_events\juce_events.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_graphics\juce_graphics.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_gui_basics\juce_gui_basics.h" />
+    <ClInclude Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_gui_extra\juce_gui_extra.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\stsd\third_party\juce\modules\juce_graphics\image_formats\jpglib\changes to libjpeg for JUCE.txt">
